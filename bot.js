@@ -1,10 +1,8 @@
 //all the shit
 const discord = require('discord.js');
-const token = "yourtokenhere";
+const token = "haha imagine if i leaked the token lol";
 const client = new discord.Client({
-    intents: 14023,
-    token: token,
-    autorun: true
+    intents: ["GUILDS", "GUILD_MESSAGES"],
 });
 const prefix = "c!";
 
@@ -23,6 +21,7 @@ lowercase - converts text to lowercase
 */
 
 //bot itself
+client.login(token);
 client.once("ready", async () => {
     client.user.setActivity('c!', {type: "LISTENING"});
     console.log(`${client.user.tag} is ONLINE :)`);
@@ -66,7 +65,7 @@ client.on("messageCreate", function command(message){
             if (isNaN(eval(math))){
                 message.reply("not a number");
             } else if (!(isNaN(eval(math)))){
-                message.reply(eval(math))
+                message.reply(eval(math));
             }
         }
         if (command == "whoami"){
