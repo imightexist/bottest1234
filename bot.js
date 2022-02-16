@@ -60,14 +60,6 @@ client.on("messageCreate", function command(message){
                 message.reply("tails");
             }
         }
-        if (command.includes("math ")){
-            math = command.replace('math ','');
-            if (isNaN(eval(math))){
-                message.reply("not a number");
-            } else if (!(isNaN(eval(math)))){
-                message.reply(eval(math));
-            }
-        }
         if (command == "whoami"){
             message.reply(message.author.username);
         }
