@@ -14,7 +14,7 @@ about - about bot
 rockpaperscissors - responds rock paper or scissors
 flipcoin - flip a coin
 say - says whatever after it
-math - does equation after it
+invite - gives invite link
 whoami - your username
 uppercase - converts text to uppercase
 lowercase - converts text to lowercase
@@ -71,6 +71,9 @@ client.on("messageCreate", function command(message){
         }
         if (command.includes("lowercase ")){
             message.reply(command.replace("lowercase ","").toLowerCase());
+        }
+        if (command == "invite"){
+            message.reply("https://discord.com/api/oauth2/authorize?client_id=860600312170545162&permissions=8&scope=bot");
         }
     }
 });
