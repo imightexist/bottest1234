@@ -10,3 +10,4 @@ say - says whatever after it
 whoami - your username
 uppercase - converts text to uppercase
 lowercase - converts text to lowercase
+invite - gives invite link
