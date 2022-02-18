@@ -31,7 +31,7 @@ client.on("messageCreate", function command(message){
     if (message.content.startsWith(prefix)) {
         let command = message.content.replace(prefix, '');
         if (command == "help") {
-            message.reply("https://github.com/imightexist/bottest1234/blob/main/commands.txt");
+            message.reply("https://raw.githubusercontent.com/imightexist/bottest1234/main/commands.txt");
         }
         if (command == "test") {
             message.reply("Hello World!");
