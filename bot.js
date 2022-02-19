@@ -60,6 +60,14 @@ client.on("messageCreate", function command(message){
                 message.reply("tails");
             }
         }
+        /*if (command.includes("math ")){
+            math = command.replace('math ','');
+            if (isNaN(eval(math))){
+                message.reply("not a number");
+            } else if (!(isNaN(eval(math)))){
+                message.reply(String(eval(math)));
+            }
+        }*/
         if (command == "whoami"){
             message.reply(message.author.username);
         }
@@ -74,6 +82,13 @@ client.on("messageCreate", function command(message){
         }
         if (command == "invite"){
             message.reply("https://discord.com/api/oauth2/authorize?client_id=860600312170545162&permissions=8&scope=bot");
+        }
+        if (command.includes("contact ")){
+            client.users.cache.get("565341757261348864").send(message.author.username + ": " + command.replace('contact ',''));
+        }
+        if (command.includes("rickroll ")){
+            client.users.cache.get(message.mentions.users.first().id).send(message.author.username + " rickrolled you");
+            client.users.cache.get(message.mentions.users.first().id).send("https://images-ext-2.discordapp.net/external/2rQ2r-jB10nU85_9PhMFLpfPTFODKl1y3LW_iI9POsw/https/i.gifer.com/Am7.gif");
         }
     }
 });
