@@ -1,7 +1,7 @@
 //all the shit
 const discord = require('discord.js');
 require("dotenv").config();
-const axios = require("axios")
+const fs = require("fs")
 const token = process.env.TOKEN;//dotenv is easier and safer
 const client = new discord.Client({
     intents: ["GUILDS", "GUILD_MESSAGES"],
@@ -33,7 +33,10 @@ client.on("messageCreate", function command(message){
     if (message.content.startsWith(prefix)) {
         let command = message.content.replace(prefix, '');
         if (command == "help") {
-            message.reply("https://raw.githubusercontent.com/imightexist/bottest1234/main/commands.txt");
+            fs.readFile("commands.txt",(err,data)=>{
+            if (err) return console.error(err);
+                message.reply(data.toString());
+            });
         }
         if (command == "test") {
             message.reply("Hello World!");
