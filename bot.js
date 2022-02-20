@@ -1,6 +1,8 @@
 //all the shit
 const discord = require('discord.js');
-const token = "haha imagine if i leaked the token lol";
+require("dotenv").config();
+const axios = require("axios")
+const token = process.env.TOKEN;//dotenv is easier and safer
 const client = new discord.Client({
     intents: ["GUILDS", "GUILD_MESSAGES"],
 });
