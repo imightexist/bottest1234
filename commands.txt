@@ -11,5 +11,5 @@ whoami - your username
 uppercase - converts text to uppercase
 lowercase - converts text to lowercase
 invite - gives invite link
-contact - dms me your shit lol
+contact - dms me your shit lol, please just do feedback or i will find you
 rickroll - dms rickroll gif to mentioned person
