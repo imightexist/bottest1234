@@ -13,3 +13,9 @@ lowercase - converts text to lowercase
 invite - gives invite link
 contact - dms me your shit lol, please just do feedback or i will find you
 rickroll - dms rickroll gif to mentioned person
+
+commands in the future:
+ping - do i have to explain everything
+kick - noooo
+ban - noooo
+support - gives discord server
