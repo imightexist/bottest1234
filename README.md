@@ -3,3 +3,7 @@ discord.js bot made by iexist, doesn't have much commands right now. it all star
 
 # Invite the bot
 https://discord.com/api/oauth2/authorize?client_id=860600312170545162&permissions=8&scope=bot
+
+# To save the token create a new file called .env, then write this into it:
+<code>TOKEN=insert token here</code><br>
+marcii-101
